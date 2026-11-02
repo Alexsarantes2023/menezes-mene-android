@@ -1,0 +1,90 @@
+export const MEDIA_IMAGES = {
+  logo: require('./images/logo.png'),
+  homeFeature: require('./images/cd0.png'),
+  homeGroup: require('./images/cd1.png'),
+  gallery: [
+    {
+      id: '1',
+      source: require('./images/cd0.png'),
+      title: 'Manutenção da Guitarra',
+      description: 'Levando a Guitarra no Luthier - Guitarra pronta.',
+    },
+    {
+      id: '2',
+      source: require('./images/cd1.png'),
+      title: 'Congresso',
+      description: 'Congresso de Jovens UJADEMC.',
+    },
+    {
+      id: '3',
+      source: require('./images/cd2.png'),
+      title: 'Congresso de Jovens',
+      description: 'Mais sobre Congresso de Jovens UJADEMC.',
+    },
+    {
+      id: '4',
+      source: require('./images/cd3.png'),
+      title: 'Estúdio David Musical',
+      description: 'Gravação e ensaios.',
+    },
+    {
+      id: '5',
+      source: require('./images/cd4.png'),
+      title: 'Meu Estúdio',
+      description: 'Estúdio Gato da Pedreira.',
+    },
+    {
+      id: '6',
+      source: require('./images/cd5.png'),
+      title: 'Estudos',
+      description: 'Estudando Música e Guitarra.',
+    },
+    {
+      id: '7',
+      source: require('./images/cd6.png'),
+      title: 'Estudos Afiados',
+      description: 'Estudando com muita alegria, Música e Guitarra.',
+    },
+    {
+      id: '8',
+      source: require('./images/cd7.png'),
+      title: 'Play com Pablo',
+      description: 'Play com Pablo - Ad. Vila esperança.',
+    },
+    {
+      id: '9',
+      source: require('./images/cd8.png'),
+      title: 'Aperfeiçoamento',
+      description: 'Aperfeiçoamentos Musicais, cada dia melhor.',
+    },
+    {
+      id: '10',
+      source: require('./images/cd9.png'),
+      title: 'Professor Luiz Oliveira',
+      description: 'Grande Mestre da Música.',
+    },
+    {
+      id: '11',
+      source: require('./images/cd10.png'),
+      title: 'Estudos Contínuos',
+      description: 'Estudando Muito.',
+    },
+    {
+      id: '12',
+      source: require('./images/cd11.png'),
+      title: 'Workshop Marcinho Eiras',
+      description: 'Marcinho Eiras - Work Shop.',
+    },
+    {
+      id: '13',
+      source: require('./images/cd12.png'),
+      title: 'Música e tecnologia',
+      description: 'Um registro no estúdio.',
+    },
+  ],
+  videoPosters: [
+    require('./images/cd6.png'),
+    require('./images/cd3.png'),
+    require('./images/cd2.png'),
+  ],
+};
