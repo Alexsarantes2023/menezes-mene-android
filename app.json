@@ -11,8 +11,9 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundColor": "#0b1326"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "package": "com.menezesmene.wearethechurch"
     },
@@ -38,6 +39,11 @@
       ],
       "expo-asset",
       "expo-video"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d3abf6d7-9055-4bfa-9f36-a4e00d27e2ae"
+      }
+    }
   }
 }
