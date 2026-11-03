@@ -157,7 +157,7 @@ export default function MediaScreen() {
             }}
             renderItem={({ item }) => (
               <View style={styles.slide}>
-                <Image source={item.source} style={styles.slideImage} resizeMode="cover" />
+                <Image source={item.source} style={styles.slideImage} resizeMode="contain" />
                 <View style={styles.slideCaption}>
                   <Text style={styles.slideTitle}>{item.title}</Text>
                   <Text style={styles.slideDesc}>{item.description}</Text>
@@ -274,11 +274,12 @@ const styles = StyleSheet.create({
   },
   slide: {
     width: width - 32,
-    height: 250,
+    height: 345,
   },
   slideImage: {
     width: '100%',
-    height: 185,
+    height: 280,
+    backgroundColor: '#0b1326',
   },
   slideCaption: {
     padding: 12,
