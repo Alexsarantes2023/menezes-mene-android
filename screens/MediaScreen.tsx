@@ -16,6 +16,7 @@ import { useVideoPlayer, VideoView } from 'expo-video';
 import { MEDIA_IMAGES } from '../assets/media';
 
 const { width } = Dimensions.get('window');
+const VIDEO_ASPECT_RATIO = 406 / 720;
 
 const BAND_VIDEOS = [
   {
@@ -69,7 +70,7 @@ function BandVideoCard({ video }: { video: (typeof BAND_VIDEOS)[number] }) {
           style={styles.videoThumb}
           player={player}
           nativeControls
-          contentFit="contain"
+          contentFit="cover"
         />
       ) : (
         <TouchableOpacity
@@ -327,6 +328,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#10b981',
   },
   videoCard: {
+    marginHorizontal: -8,
     backgroundColor: '#161f36',
     borderRadius: 20,
     overflow: 'hidden',
@@ -336,7 +338,7 @@ const styles = StyleSheet.create({
   },
   videoThumb: {
     width: '100%',
-    height: 280,
+    aspectRatio: VIDEO_ASPECT_RATIO,
     backgroundColor: '#0b1326',
   },
   videoPreview: {
