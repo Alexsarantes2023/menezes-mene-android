@@ -83,8 +83,8 @@ export const MEDIA_IMAGES = {
     },
   ],
   videoPosters: [
-    require('./images/cd6.png'),
-    require('./images/cd3.png'),
-    require('./images/cd2.png'),
+    require('./video-posters/video1.jpg'),
+    require('./video-posters/video2.jpg'),
+    require('./video-posters/video3.jpg'),
   ],
 };
