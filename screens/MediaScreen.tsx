@@ -78,7 +78,7 @@ function BandVideoCard({ video }: { video: (typeof BAND_VIDEOS)[number] }) {
           disabled={isLoading}
           activeOpacity={0.8}
         >
-          <Image source={video.poster} style={styles.videoThumb} resizeMode="cover" />
+          <Image source={video.poster} style={styles.videoThumb} resizeMode="contain" />
           <View style={styles.videoOverlay}>
             <MaterialIcons
               name={isLoading ? 'hourglass-top' : 'play-arrow'}
@@ -336,14 +336,14 @@ const styles = StyleSheet.create({
   },
   videoThumb: {
     width: '100%',
-    height: 170,
+    height: 280,
+    backgroundColor: '#0b1326',
   },
   videoPreview: {
     position: 'relative',
   },
   videoOverlay: {
     ...StyleSheet.absoluteFill,
-    height: 170,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: 'rgba(0,0,0,0.35)',
